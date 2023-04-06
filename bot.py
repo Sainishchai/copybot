@@ -2,9 +2,9 @@ import os
 import pyrogram
 
 if bool(os.environ.get("ENV", False)):
-    from sample_config import Config
+    from sample_config import *
 else:
-    from config import Config
+    from config import *
 
 if __name__ == "__main__":
     plugins = dict(
