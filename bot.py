@@ -4,7 +4,7 @@ import pyrogram
 if bool(os.environ.get("ENV", False)):
     from sample_config import *
 else:
-    from config import *
+    from sample_config import Config
 
 if __name__ == "__main__":
     plugins = dict(
